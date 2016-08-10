@@ -15,8 +15,21 @@
 #       3:
 ##############################################################################
 # Imports
-
+import random
 # Body
+
+#9.4.1
+def uses_only(user_word, string_of_letters):
+    for letter in user_word:
+        if letter not in string_of_letters:
+            return False
+    return True
+
+#9.4.2
+def sentence_generator():
+    dataset = 'acefhlo'
+    print(dataset[random.randint(1, len(dataset))])
+    ##How do you let it know what are real words??!?!
 
 
 ##############################################################################
